@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://axisversion.sample" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://axisversion.sample" xmlns:intf="http://axisversion.sample" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDLはApache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)によって生成されました / [en]-(WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT))-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://axisversion.sample" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="getVersion">
+    <complexType/>
+   </element>
+   <element name="getVersionResponse">
+    <complexType>
+     <sequence>
+      <element name="getVersionReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="getVersionRequest">
+
+      <wsdl:part element="impl:getVersion" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getVersionResponse">
+
+      <wsdl:part element="impl:getVersionResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="Version">
+
+      <wsdl:operation name="getVersion">
+
+         <wsdl:input message="impl:getVersionRequest" name="getVersionRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getVersionResponse" name="getVersionResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="VersionSoapBinding" type="impl:Version">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="getVersion">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getVersionRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getVersionResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="VersionService">
+
+      <wsdl:port binding="impl:VersionSoapBinding" name="Version">
+
+         <wsdlsoap:address location="http://localhost:8080/axis2/services/Version"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>
