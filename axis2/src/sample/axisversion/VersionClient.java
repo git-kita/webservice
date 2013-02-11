@@ -5,15 +5,15 @@ import java.io.PrintStream;
 
 
 /**
-* ƒTƒ“ƒvƒ‹VersionService‚ÌƒNƒ‰ƒCƒAƒ“ƒg‚Å‚·B
+* ï¿½Tï¿½ï¿½ï¿½vï¿½ï¿½VersionServiceï¿½ÌƒNï¿½ï¿½ï¿½Cï¿½Aï¿½ï¿½ï¿½gï¿½Å‚ï¿½ï¿½B
 * 
-* ‚±‚ÌƒNƒ‰ƒCƒAƒ“ƒg‚ðì‚é‘O‚Ì‰º€”õ
-* 
-* @0) VersionWsdl2Java.bat ‚ðŽ©ì‚µ‚Ü‚·B
-* @1) 0)‚É‚æ‚è VersionServiceStub.java ‚Æ VersionServiceCallbackHandler.java ‚ÌŽ©“®¶¬‚ðs‚¢‚Ü‚µ‚½B
-* @2) 1)‚É‚æ‚è¶¬‚³‚ê‚½ƒNƒ‰ƒX‚ðsample.axisversionƒpƒbƒP[ƒW‚ÉˆÚ“®‚µ‚Ü‚µ‚½B
-* @4) ƒXƒ^ƒu‚ÅException‚ªo‚é‚Ì‚ÅAnew javax.xml.namespace.QName‚Èˆ—‚ð‚µ‚Ä‚¢‚é‚Æ‚±‚ë‚ð­‚µ˜M‚è‚Ü‚µ‚½B
-* @@@Ž©“®¶¬‚³‚ê‚½services.xml‚ÆŽ©“®¶¬‚³‚ê‚½ƒXƒ^ƒu‚Æ‚ÌŠÔ‚Åƒpƒ‰ƒ[ƒ^•sˆê’v‚ª‚ ‚é—lŽqB
+* ï¿½ï¿½ï¿½ÌƒNï¿½ï¿½ï¿½Cï¿½Aï¿½ï¿½ï¿½gï¿½ï¿½ï¿½ï¿½ï¿½Oï¿½Ì‰ï¿½ï¿½ï¿½ï¿½ï¿½
+* ãƒ†ã‚¹ãƒˆãƒ—ãƒƒã‚·ãƒ¥
+* ï¿½@0) VersionWsdl2Java.bat ï¿½ï¿½ï¿½ï¿½ï¿½ì‚µï¿½Ü‚ï¿½ï¿½B
+* ï¿½@1) 0)ï¿½É‚ï¿½ï¿½ VersionServiceStub.java ï¿½ï¿½ VersionServiceCallbackHandler.java ï¿½ÌŽï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½sï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½ï¿½B
+* ï¿½@2) 1)ï¿½É‚ï¿½è¶ï¿½ï¿½ï¿½ï¿½ï¿½ê‚½ï¿½Nï¿½ï¿½ï¿½Xï¿½ï¿½sample.axisversionï¿½pï¿½bï¿½Pï¿½[ï¿½Wï¿½ÉˆÚ“ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½ï¿½B
+* ï¿½@4) ï¿½Xï¿½^ï¿½uï¿½ï¿½Exceptionï¿½ï¿½ï¿½oï¿½ï¿½Ì‚ÅAnew javax.xml.namespace.QNameï¿½Èï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½Æ‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Mï¿½ï¿½Ü‚ï¿½ï¿½ï¿½ï¿½B
+* ï¿½@ï¿½@ï¿½@ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ê‚½services.xmlï¿½ÆŽï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ê‚½ï¿½Xï¿½^ï¿½uï¿½Æ‚ÌŠÔ‚Åƒpï¿½ï¿½ï¿½ï¿½ï¿½[ï¿½^ï¿½sï¿½ï¿½vï¿½ï¿½ï¿½ï¿½ï¿½ï¿½lï¿½qï¿½B
 */
 public class VersionClient {
 
